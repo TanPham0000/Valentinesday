@@ -1,0 +1,78 @@
+body {
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.card {
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.image-container {
+    margin-bottom: 20px;
+    position: relative; /* Needed for absolute positioning of hearts */
+}
+
+.image-container img {
+    width: 150px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.hearts {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 24px;
+    color: #ff6b6b;
+}
+
+.question {
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+.options {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.yes {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.yes:hover {
+    transform: scale(1.1);
+    background-color: #45a049;
+}
+
+.no {
+    background-color: #f44336;
+    color: white;
+    position: relative;
+}
+
+.no:hover {
+    transform: scale(0.9);
+}
