@@ -12,9 +12,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
         // Increase button size by 30px on each click
         let currentWidth = yesButton.offsetWidth;
-        let currentHeight = yesButton.offsetHeight;
+        let currentHeight = yesButton.offsetHeight;       
         yesButton.style.width = `${currentWidth + 30}px`;
         yesButton.style.height = `${currentHeight + 30}px`;
+        console.log("Yippeeee"); 
     });
 
     // Make "NO" button run away
